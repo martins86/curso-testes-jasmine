@@ -4,7 +4,7 @@ describe("Comparador toBeDefined:", () => {
         const a = 10;
 
         // Assert
-        expect(a).toBeDefined();    // a n1 esta definida
+        expect(a).toBeDefined();    // a esta definida
         expect(null).toBeDefined();  // nulo é uma definição
         expect(NaN).toBeDefined();   // náo é um numero é uma definição
     });
