@@ -1,0 +1,14 @@
+{
+  "name": "jasmine-no-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Thiago Martins de Freitas",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.6.3"
+  }
+}
