@@ -57,7 +57,7 @@ describe('Exemplos de Comparadores - comparando valores e ou retornos:', () => {
             // Afirma
             expect(texto).toMatch('Jasmine');             // existe um 'Jasmine' em texto
             expect(texto).toMatch(/jasmine/i);            // existe um 'Jasmine' ou 'jasmine' em texto
-            expect('12345-123').toMatch(/^\d{5}-\d{3}$/); // expressão regular:  ^ - começa, \d - digito, {5} - cinco, - tem um hifen, $ - termina 
+            expect('12345-123').toMatch(/^\d{5}-\d{3}$/); // expressão regular:  ^ - começa, \d - digito, {5} - cinco, - tem um hifen, $ - termina
         });
     });
 
@@ -70,7 +70,7 @@ describe('Exemplos de Comparadores - comparando valores e ou retornos:', () => {
             let numero = 10;
 
             // Afirma
-            expect(objeto).toBeNull();     // o objeto esta definido como null 
+            expect(objeto).toBeNull();     // o objeto esta definido como null
 
             expect(vazio).not.toBeNull();  // o vazio não esta definido como null
             expect(numero).not.toBeNull(); // o numero não esta definido como null
