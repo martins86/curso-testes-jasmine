@@ -561,3 +561,12 @@ describe('Exemplo de Jasmine.clock - valida uma chamada síncrona (sync):', () =
         expect(dobro).toHaveBeenCalled();
     });
 });
+
+describe('Exemplo de Debug em testes:', () => {
+
+    it('Deve validar um resultado como verdadeiro.', () => {
+      // debugger;                  // remova o "//" que esta antes de debugger;
+      let isTrue = true;
+      expect(isTrue).toBeTruthy();
+    });
+  });
