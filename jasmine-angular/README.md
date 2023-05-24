@@ -18,6 +18,9 @@ ng add @angular/material
 ng g m pages/home --module --routing
 ng g c pages/home
 
+ng g m pages/list --module --routing
+ng g c pages/list
+
 ng g m pages/not-found --module --routing
 ng g c pages/not-found
 
