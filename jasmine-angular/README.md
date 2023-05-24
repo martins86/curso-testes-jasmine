@@ -5,6 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Commands
 
 ```sh
+npm install -g json-server
+
+npm install json-server
 npm install karma-spec-reporter --save-dev
 ```
 
@@ -15,19 +18,38 @@ ng add @angular/material
 ng g m pages/home --module --routing
 ng g c pages/home
 
+ng g m pages/not-found --module --routing
+ng g c pages/not-found
+
 ng g c shared/components/button
 
 ng g service services/crud/crud
 ng g service services/loading/loading
 ```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Running app
 
-## Build
+```sh
+npm start
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Running db
+
+```sh
+npm run db
+```
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+npm run test
+
+or
+
+npm run test:dev
+
+or
+
+npm run test:ci
+```
 
