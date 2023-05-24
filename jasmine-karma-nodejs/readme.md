@@ -1,20 +1,34 @@
-Comandos:
+#Comandos:
 
+```sh
 npm init
+```
+
+```sh
 npm i --save-dev jasmine
-npm i -g jasmine
+```
+
+```sh
+npm i -g jasmine karma-cli
+```
+
+```sh
 jasmine init
+```
 
-npm i --save-dev karma
-npm i --save-dev karma-jasmine
-npm i -g karma-cli
+```sh
+npm i --save-dev karma karma-jasmine browserify karma-browserify watchify
+```
 
-npm i --save-dev browserify
-npm i --save-dev karma-browserify
-npm i --save-dev watchify
 
-navegador: Chrome
+## Navegador: Chrome
+
+```sh
 npm i karma-chrome-launcher
+```
 
-navegador: FireFox
+## Navegador: FireFox
+
+```sh
 npm i karma-firefox-launcher
+```
