@@ -1,8 +1,6 @@
 # Testes com Jasmine
 
-Testes Unitários com o Jasmine
-
- - Jasmine com Angular (Jasmine + Karma)
- - Jasmine puro exemplos
+ - Jasmine e Karma no Angular
+ - Jasmine puro (exemplos de testes)
  - Jasmine com Karma (Jasmine + Karma)
  - Jasmine puro com nodejs
