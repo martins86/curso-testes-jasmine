@@ -17,9 +17,8 @@ ng g c pages/home
 
 ng g c shared/components/button
 
-ng g service services/crud
-ng g service services/loading
-ng g service services/service-crud
+ng g service services/crud/crud
+ng g service services/loading/loading
 ```
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
