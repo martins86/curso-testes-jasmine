@@ -4,29 +4,58 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Commands
 
+### Install
+
 ```sh
 npm install -g json-server
-
-npm install json-server
-npm install karma-spec-reporter --save-dev
 ```
 
 ```sh
+npm install karma-spec-reporter json-server --save-dev
+```
+
+### Create
+```sh
 ng new jasmine-angular
+```
+
+```sh
 ng add @angular/material
+```
 
+```sh
 ng g m pages/home --module --routing
+```
+
+```sh
 ng g c pages/home
+```
 
+```sh
 ng g m pages/list --module --routing
+```
+
+```sh
 ng g c pages/list
+```
 
+```sh
 ng g m pages/not-found --module --routing
+```
+
+```sh
 ng g c pages/not-found
+```
 
+```sh
 ng g c shared/components/button
+```
 
+```sh
 ng g service services/crud/crud
+```
+
+```sh
 ng g service services/loading/loading
 ```
 
