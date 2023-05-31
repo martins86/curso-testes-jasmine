@@ -2,74 +2,54 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
 
+<br />
+
+## Installation
+
+| Action                                    | Command                                                  |
+| ----------------------------------------- | -------------------------------------------------------- |
+| Install Global Json-serve                 | `npm install -g json-server`                             |
+| Install Dev Json-serve and Karma-spec-rep | `npm install karma-spec-reporter json-server --save-dev` |
+| Install Material                          | `ng add @angular/material`                               |
+
+<br />
+
 ## Commands
 
-### Install
+| Action                             | Command                                                 |
+| ---------------------------------- | ------------------------------------------------------- |
+| Create App                         | `ng new jasmine-angular`                                |
+| Create Guard                       | `ng generate guard core/guard/auth-guard`               |
+| Create Interceptor                 | `ng generate interceptor core/interceptor/http-request` |
+| Create Module with Route Home      | `ng generate module pages/home --module --routing`      |
+| Create Page Home                   | `ng generate component pages/home`                      |
+| Create Module with Route Not found | `ng generate module pages/not-found --module --routing` |
+| Create Page Not found              | `ng generate component pages/not-found`                 |
 
-```sh
-npm install -g json-server
-```
-
-```sh
-npm install karma-spec-reporter json-server --save-dev
-```
-
-### Create
-```sh
-ng new jasmine-angular
-```
-
-```sh
-ng add @angular/material
-```
-
-```sh
-ng g m pages/home --module --routing
-```
-
-```sh
-ng g c pages/home
-```
-
-```sh
-ng g m pages/list --module --routing
-```
-
-```sh
-ng g c pages/list
-```
-
-```sh
-ng g m pages/not-found --module --routing
-```
-
-```sh
-ng g c pages/not-found
-```
+<br />
 
 ## Running app
 
-```sh
-npm start
-```
+| Action                | Command     |
+| --------------------- | ----------- |
+| Running app localhost | `npm start` |
+
+<br />
 
 ## Running db
 
-```sh
-npm run db
-```
+| Action                      | Command      |
+| --------------------------- | ------------ |
+| Running data base localhost | `npm run db` |
+
+<br />
 
 ## Running unit tests
 
-```sh
-npm run test
+| Action                                           | Command            |
+| ------------------------------------------------ | ------------------ |
+| Running with coverage                            | `npm run test`     |
+| Running with coverage in Chrome                  | `npm run test:dev` |
+| Running with coverage in ChromeHeadlessNoSandbox | `npm run test:ci`  |
 
-or
-
-npm run test:dev
-
-or
-
-npm run test:ci
-```
-
+<br />
