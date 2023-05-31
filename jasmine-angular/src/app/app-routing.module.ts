@@ -10,13 +10,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'list',
-    loadChildren: () =>
-      import('./pages/list/list.module').then(
-        (module) => module.ListModule
-      ),
-  },
-  {
     path: '**',
     loadChildren: () =>
       import('./pages/not-found/not-found.module').then(
