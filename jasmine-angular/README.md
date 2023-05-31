@@ -1,10 +1,10 @@
-# JasmineAngular
+# Jasmine Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
 
 <br />
 
-## Installation
+# Installation
 
 | Action                                    | Command                                                  |
 | ----------------------------------------- | -------------------------------------------------------- |
@@ -14,21 +14,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <br />
 
-## Commands
+# Commands
 
-| Action                             | Command                                                 |
-| ---------------------------------- | ------------------------------------------------------- |
-| Create App                         | `ng new jasmine-angular`                                |
-| Create Guard                       | `ng generate guard core/guard/auth-guard`               |
-| Create Interceptor                 | `ng generate interceptor core/interceptor/http-request` |
-| Create Module with Route Home      | `ng generate module pages/home --module --routing`      |
-| Create Page Home                   | `ng generate component pages/home`                      |
-| Create Module with Route Not found | `ng generate module pages/not-found --module --routing` |
-| Create Page Not found              | `ng generate component pages/not-found`                 |
+| Action                             | Command                                                  |
+| ---------------------------------- | -------------------------------------------------------- |
+| Create App                         | `ng new jasmine-angular`                                 |
+| Create Guard                       | `ng generate guard core/guard/auth-guard`                |
+| Create Interceptor                 | `ng generate interceptor core/interceptor/http-request`  |
+| Create Module with Route Home      | `ng generate module pages/home --module --routing`       |
+| Create Module with Route Not found | `ng generate module pages/not-found --module --routing`  |
+| Create Page Home                   | `ng generate component pages/home`                       |
+| Create Page Not found              | `ng generate component pages/not-found`                  |
+| Create Component Loading Spinner   | `ng generate component shared/component/loading-spinner` |
+| Create Component Star Rating       | `ng generate component shared/component/star-rating`     |
 
 <br />
 
-## Running app
+# Running app
 
 | Action                | Command     |
 | --------------------- | ----------- |
@@ -36,7 +38,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <br />
 
-## Running db
+# Running db
 
 | Action                      | Command      |
 | --------------------------- | ------------ |
@@ -44,7 +46,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <br />
 
-## Running unit tests
+# Running unit tests
 
 | Action                                           | Command            |
 | ------------------------------------------------ | ------------------ |
