@@ -47,18 +47,6 @@ ng g m pages/not-found --module --routing
 ng g c pages/not-found
 ```
 
-```sh
-ng g c shared/components/button
-```
-
-```sh
-ng g service services/crud/crud
-```
-
-```sh
-ng g service services/loading/loading
-```
-
 ## Running app
 
 ```sh
