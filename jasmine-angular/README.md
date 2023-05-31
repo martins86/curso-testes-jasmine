@@ -18,7 +18,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 | Action                               | Command                                                                          |
 | ------------------------------------ | -------------------------------------------------------------------------------- |
-| `Create App`                         | ng new jasmine-angular                                                           |
+| `Create App`                         | ng new jasmine-angular --routing=true --style=scss                               |
 | `Create Guard CanActivate`           | ng generate guard core/guard/auth-guard                                          |
 | `Create Interceptor`                 | ng generate interceptor core/interceptor/http-request                            |
 | `Create Module with Route Home`      | ng generate module pages/home --module --routing                                 |
@@ -30,6 +30,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | `Create Pipe Bypass Security`        | ng generate pipe pipes/bypass-security/bypass-security --skip-import             |
 | `Create Pipe Replace Random String`  | ng generate pipe pipes/replace-random-string/replace-random-string --skip-import |
 | `Create Pipe Truncate String`        | ng generate pipe pipes/truncate-string/truncate-string --skip-import             |
+| `Create Directive Sign in Google`    | ng generate directive directives/sign-in/google-sign-in --skip-import            |
+| `Create Directive Mask Input CNPJ`   | ng generate directive directives/masks/mask-input-cnpj --skip-import             |
+| `Create Service Crud Operations`     | ng generate service services/crud-operations/crud-operations                     |
+| `Create Service Registry Icons`      | ng generate service services/registry-icons/registry-icons                       |
+| `Create Interface Crud Operations`   | ng generate interface interfaces/crud-operations                                 |
 
 <br />
 
