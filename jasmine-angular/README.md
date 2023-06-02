@@ -25,7 +25,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | `Create Module with Route Not found` | ng generate module pages/not-found --module --routing                            |
 | `Create Page Home`                   | ng generate component pages/home                                                 |
 | `Create Page Not found`              | ng generate component pages/not-found                                            |
-| `Create Component Loading Spinner`   | ng generate component shared/component/loading-spinner --skip-import             |
+| `Create Service Loading`             | ng generate service services/loading/loading                                     |
+| `Create Component Loading Spinner`   | ng generate component shared/component/loading-spinner                           |
 | `Create Component Star Rating`       | ng generate component shared/component/star-rating --skip-import                 |
 | `Create Pipe Bypass Security`        | ng generate pipe pipes/bypass-security/bypass-security --skip-import             |
 | `Create Pipe Replace Random String`  | ng generate pipe pipes/replace-random-string/replace-random-string --skip-import |

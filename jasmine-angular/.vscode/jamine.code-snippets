@@ -8,7 +8,7 @@
   "it template - Jasmine": {
     "prefix": "it-jasmine",
     "body": [
-      "\tit('${1:Should be}', () => {",
+      "\tit('${1:should be}', () => {",
       "\t\t// Arrange",
       "\t\t${2}",
       "\t\t// Act",
@@ -24,7 +24,7 @@
     "prefix": "describe-with-it-jasmine",
     "body": [
       "describe('${1:Testing the feature}', () => {",
-      "\tit('${2:Should be}', () => {",
+      "\tit('${2:should be}', () => {",
       "\t\t// Arrange",
       "\t\t${3}",
       "\t\t// Act",
