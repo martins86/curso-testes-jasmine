@@ -21,6 +21,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | `Create App`                         | ng new jasmine-angular --routing=true --style=scss                               |
 | `Create Guard CanActivate`           | ng generate guard core/guard/auth-guard                                          |
 | `Create Interceptor`                 | ng generate interceptor core/interceptor/http-request                            |
+| `Create Module Layout`               | ng generate module shared/layout --module                                        |
+| `Create Component Layout Top Bar`    | ng generate component shared/layout/default/top-bar                              |
+| `Create Component Layout Bottom Bar` | ng generate component shared/layout/default/bottom-bar                           |
 | `Create Module with Route Home`      | ng generate module pages/home --module --routing                                 |
 | `Create Module with Route Not found` | ng generate module pages/not-found --module --routing                            |
 | `Create Page Home`                   | ng generate component pages/home                                                 |

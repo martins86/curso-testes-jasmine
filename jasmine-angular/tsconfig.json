@@ -12,6 +12,7 @@
       "@pipes/*": ["app/pipes/*"],
       "@services/*": ["app/services/*"],
       "@components/*": ["app/shared/components/*"],
+      "@layout/*": ["app/shared/layout/*"],
       "@environment/*": ["environments/*"]
     },
     "outDir": "./dist/out-tsc",

@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 --disable-host-check --open",
     "db": "json-server --watch ./data/db.json",
-    "build": "ng build",
+    "build": "ng build --source-map --optimization --output-hashing=none --vendor-chunk=false --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --code-coverage",
     "test:dev": "npm run test -- --progress --browsers Chrome",

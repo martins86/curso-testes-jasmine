@@ -7,9 +7,7 @@ import { HttpRequestInterceptor } from '@core/interceptor/http-request.intercept
 
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
-
-import { AppMaterialModule } from './app-materials.module';
-
+import { LayoutModule } from '@layout/layout.module';
 import { LoadingSpinnerComponent } from '@components/loading-spinner/loading-spinner.component';
 
 
@@ -19,8 +17,8 @@ import { LoadingSpinnerComponent } from '@components/loading-spinner/loading-spi
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    LayoutModule,
     LoadingSpinnerComponent,
-    AppMaterialModule,
   ],
   providers: [
     {
