@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
+import { HeaderPageComponent } from '@components/header-page/header-page.component';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    HeaderPageComponent
   ]
 })
 export class HomeModule { }

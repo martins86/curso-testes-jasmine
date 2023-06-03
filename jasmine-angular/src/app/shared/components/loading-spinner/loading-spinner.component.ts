@@ -10,7 +10,7 @@ import {
 import { LoadingService } from '@services/loading/loading.service';
 
 @Component({
-  selector: 'loading-spinner',
+  selector: 'app-loading-spinner',
   templateUrl: './loading-spinner.component.html',
   styleUrls: ['./loading-spinner.component.scss'],
   standalone: true,
