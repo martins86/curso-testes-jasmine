@@ -8,7 +8,7 @@ describe('HeaderPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderPageComponent ]
+      imports: [ HeaderPageComponent ]
     })
     .compileComponents();
 

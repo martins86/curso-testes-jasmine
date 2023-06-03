@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 import { TopBarComponent } from './top-bar.component';
 
 describe('TopBarComponent', () => {
@@ -8,9 +11,9 @@ describe('TopBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopBarComponent ]
-    })
-    .compileComponents();
+      imports: [MatToolbarModule, MatIconModule],
+      declarations: [TopBarComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TopBarComponent);
     component = fixture.componentInstance;
