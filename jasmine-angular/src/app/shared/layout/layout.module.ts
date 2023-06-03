@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatIconModule } from '@angular/material/icon';
@@ -12,5 +12,6 @@ import { BottomBarComponent } from './default/bottom-bar/bottom-bar.component';
   declarations: [TopBarComponent, BottomBarComponent],
   imports: [CommonModule, MatIconModule, MatToolbarModule, MatButtonModule],
   exports: [TopBarComponent, BottomBarComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class LayoutModule {}
