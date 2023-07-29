@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
 
+[![Open in Gitpod][open-gitpod-img]][open-gitpod-url]
+
 <br />
 
 # Installation
@@ -68,3 +70,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | `Running tests with coverage in ChromeHeadlessNoSandbox` | npm run test:ci  |
 
 <br />
+
+Licensed under [MIT licensed](./LICENSE).
+
+[open-gitpod-img]: https://gitpod.io/button/open-in-gitpod.svg
+[open-gitpod-url]: https://gitpod.io/workspaces
