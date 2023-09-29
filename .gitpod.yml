@@ -4,8 +4,8 @@ image:
 
 # Portas e Ações
 ports:
-  - name: Web App TMF Lab
-    description: study app
+  - name: app
+    description: app
     port: 4200
     onOpen: open-browser
     visibility: public
@@ -31,11 +31,11 @@ ports:
     visibility: private
 
 # Tarefas na Inicialização
-tasks:
-  - name: Setup, Install
-    before: export NG_CLI_ANALYTICS=ci
-    init: echo n | npm i -g @angular/cli
-    command: npm install
+# tasks:
+#   - name: Setup, Install
+#     before: export NG_CLI_ANALYTICS=ci
+#     init: echo n | npm i -g @angular/cli
+#     command: npm install
 
 # Github
 github:
