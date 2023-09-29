@@ -11,29 +11,28 @@ const routes: Routes = [
     component: DefaultComponent,
     children: [
       {
-        path: '',
+        path: 'home',
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import('./../../pages/home/home.module').then(
             (module) => module.HomeModule
           ),
-        canActivate: [AuthGuard],
-        pathMatch: 'full',
       },
       {
         path: 'dashboard',
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import('./../../pages/dashboard/dashboard.module').then(
             (module) => module.DashboardModule
           ),
-        canActivate: [AuthGuard]
       },
       {
         path: 'extract',
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import('./../../pages/extract/extract.module').then(
             (module) => module.ExtractModule
           ),
-        canActivate: [AuthGuard]
       },
       {
         path: 'login',
@@ -41,7 +40,22 @@ const routes: Routes = [
           import('./../../pages/login/login.module').then(
             (module) => module.LoginModule
           ),
-        canActivate: [AuthGuard]
+      },
+      {
+        path: 'not-found',
+        loadChildren: () =>
+          import('./../../pages/not-found/not-found.module').then(
+            (module) => module.NotFoundModule
+          ),
+      },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      {
+        path: '**',
+        redirectTo: 'not-found',
       },
     ],
   },

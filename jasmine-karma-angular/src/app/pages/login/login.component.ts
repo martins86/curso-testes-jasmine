@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { MenuItem } from 'src/app/shared/interfaces/menu-item';
-import { User } from 'src/app/shared/interfaces/user';
+import { AuthService } from 'src/app/shared/services/auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -10,25 +10,36 @@ import { User } from 'src/app/shared/interfaces/user';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  user!: User;
+  signinForm: FormGroup = {} as FormGroup;
+  errorMessage: string = '';
 
-  menuItems: MenuItem[] = [
-    { label: 'Item 1', value: 'item-1' },
-    { label: 'Item 2', value: 'item-2' },
-    { label: 'Item 3', value: 'item-3' },
-  ];
-
-  constructor(private router: Router) { }
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private authService: AuthService
+  ) { }
 
   ngOnInit(): void {
-    this.user = {
-      name: 'Name Fulano',
-      email: 'name_fulano@gmail.com',
-      password: '091011'
-    };
+    this.buildBasicForm();
+    localStorage.clear();
   }
 
-  goTo(route: string) {
-    this.router.navigate([`/${route}`])
+  buildBasicForm() {
+    this.signinForm = this.fb.group({
+      email: ['test@example.com', [Validators.required, Validators.email]],
+      password: ['12345', [Validators.required, Validators.minLength(4)]],
+    });
+  }
+
+  signin() {
+    this.errorMessage = '';
+    this.authService.signin(this.signinForm.value).subscribe({
+      next: (res: any) => {
+        this.router.navigateByUrl('/home');
+      },
+      error: (err: string) => {
+        this.errorMessage = err;
+      },
+    });
   }
 }
