@@ -12,6 +12,9 @@ import { ExtractComponent } from './extract.component';
   imports: [
     CommonModule,
     ExtractRoutingModule
+  ],
+  exports: [
+    ExtractComponent
   ]
 })
 export class ExtractModule { }
