@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
-import { RouterTestingModule } from '@angular/router/testing';
 
 describe('Testando o LoginComponent', () => {
   let component: LoginComponent;
@@ -10,7 +11,8 @@ describe('Testando o LoginComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        ReactiveFormsModule
       ],
       declarations: [LoginComponent]
     }).compileComponents();

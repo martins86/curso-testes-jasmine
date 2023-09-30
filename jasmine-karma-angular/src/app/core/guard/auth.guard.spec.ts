@@ -3,10 +3,12 @@ import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { AuthGuard } from './auth.guard';
+import { AuthService } from './../../shared/services/auth/auth.service';
 
 
 describe('Testando o AuthGuard', () => {
   let authGuard: AuthGuard;
+  let authService: AuthService;
   let routeMock: any = { snapshot: {} };
   let routeStateMock: any = { snapshot: {}, url: '/login' };
   let routerMock = { navigate: jasmine.createSpy('navigate') }
@@ -19,6 +21,7 @@ describe('Testando o AuthGuard', () => {
       imports: [RouterTestingModule]
     });
     authGuard = TestBed.inject(AuthGuard);
+    authService = TestBed.inject(AuthService);
 
     localStorage.removeItem('token');
   });
@@ -38,8 +41,7 @@ describe('Testando o AuthGuard', () => {
 
   it('Deve conceder acesso quando usuário tiver token válido', () => {
     // Arrange
-    const token = 'Any_ToKen!123';
-    localStorage.setItem('token', token)
+    authService.authenticated = true;
 
     // Act
     const response = authGuard.canActivate(routeMock, routeStateMock);

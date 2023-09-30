@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 
 describe('Testando o AppComponent', () => {
   let component: AppComponent;
@@ -11,6 +12,9 @@ describe('Testando o AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [
+        RouterModule
+      ]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;

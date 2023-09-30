@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ExtractComponent } from './extract.component';
 
-describe('ExtractComponent', () => {
+describe('Testando o ExtractComponent', () => {
   let component: ExtractComponent;
   let fixture: ComponentFixture<ExtractComponent>;
 
@@ -15,7 +15,7 @@ describe('ExtractComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Deve instanciar o ExtractComponent', () => {
     expect(component).toBeTruthy();
   });
 });
