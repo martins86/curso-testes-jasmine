@@ -1,0 +1,12 @@
+<button (click)="getUsers()">Fazer chamada Assíncrona Subscribe</button>
+<button (click)="getUsers()">Fazer chamada Assíncrona Promise</button>
+
+
+<br>
+<br>
+
+<div *ngIf="isLogged" class="logged">Logado</div>
+<div *ngIf="!isLogged" class="logged-out">Deslogado</div>
+
+<button (click)="isAuthenticated()">Logar no sistema</button>
+
