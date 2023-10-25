@@ -6,15 +6,17 @@ import { Router } from '@angular/router';
   templateUrl: './testing-route.component.html',
   styleUrls: ['./testing-route.component.scss']
 })
-export class TestingRouteComponent implements OnInit {
+export class TestingRouteComponent {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  navigateUrl(url: string): void {
+    this.router.navigate([`/${url}`]);
   }
 
-  navigateUrl(url: string) {
-    this.router.navigate([`/${url}`])
+  reloadPage(): void {
+    const url = this.router.url;
+    this.router.navigateByUrl(url);
   }
 
 }

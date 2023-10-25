@@ -30,5 +30,14 @@ describe('Testando o TestingRouteComponent', () => {
     component.navigateUrl(route)
 
     expect(router.navigate).toHaveBeenCalledWith(['/dashboad'])
-  })
+  });
+
+  it('Deve recarregar a rota atual', () => {
+    let route = 'dashboad'
+    spyOn(router, 'navigate')
+
+    component.reloadPage(route)
+
+    expect(router.navigate).toHaveBeenCalledWith(['/dashboad'])
+  });
 });
