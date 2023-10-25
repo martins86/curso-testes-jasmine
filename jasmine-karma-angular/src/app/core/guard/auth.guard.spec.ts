@@ -5,7 +5,6 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './../../shared/services/auth/auth.service';
 
-
 describe('Testando o AuthGuard', () => {
   let authGuard: AuthGuard;
   let authService: AuthService;
@@ -16,7 +15,10 @@ describe('Testando o AuthGuard', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
-        { provide: Router, useValue: routerMock }
+        { 
+          provide: Router,
+          useValue: routerMock 
+        }
       ],
       imports: [RouterTestingModule]
     });
@@ -30,24 +32,25 @@ describe('Testando o AuthGuard', () => {
     expect(authGuard).toBeTruthy();
   });
 
-  it('Deve redirecionar usuário para pagina de login quando não tiver logado', () => {
-    // Arrange & Act
-    const response = authGuard.canActivate(routeMock, routeStateMock);
-
-    // Assert
-    expect(response).toEqual(false)
-    expect(routerMock.navigate).toHaveBeenCalledWith(['/login'])
-  })
-
-  it('Deve conceder acesso quando usuário tiver token válido', () => {
-    // Arrange
-    authService.authenticated = true;
-
-    // Act
-    const response = authGuard.canActivate(routeMock, routeStateMock);
-
-    // Assert
-    expect(response).toEqual(true)
-  })
-
+  describe('Testes do canActivate', () => {
+    it('Deve redirecionar usuário para pagina de login quando não tiver logado', () => {
+      // Arrange & Act
+      const response = authGuard.canActivate(routeMock, routeStateMock);
+  
+      // Assert
+      expect(response).toEqual(false)
+      expect(routerMock.navigate).toHaveBeenCalledWith(['/login'])
+    })
+  
+    it('Deve conceder acesso quando usuário tiver token válido', () => {
+      // Arrange
+      authService.authenticated = true;
+  
+      // Act
+      const response = authGuard.canActivate(routeMock, routeStateMock);
+  
+      // Assert
+      expect(response).toEqual(true)
+    })
+  });
 });
