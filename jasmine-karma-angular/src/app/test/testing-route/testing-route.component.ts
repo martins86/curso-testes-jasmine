@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class TestingRouteComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){ return false; }
+  }
 
   navigateUrl(url: string): void {
     this.router.navigate([`/${url}`]);
@@ -16,7 +18,16 @@ export class TestingRouteComponent {
 
   reloadPage(): void {
     const url = this.router.url;
-    this.router.navigateByUrl(url);
-  }
+    this.router.navigated = false;
+    this.router.navigate([url]);
 
+    // ou
+    // mudar no route - RouterModule.forRoot(routes, { onSameUrlNavigation: 'ignore' })
+    this.router.onSameUrlNavigation ='reload'
+
+    // ou
+
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() =>
+    this.router.navigate([url]));
+  }
 }
